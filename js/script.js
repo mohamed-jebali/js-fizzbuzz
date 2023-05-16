@@ -3,13 +3,12 @@ for(let number = 1; number <= 100; number++){
     console.log(number);
 
     if(number % 5 === 0 && number % 3 === 0){
-        console.log("FizzBuzz")
+        console.log("FizzBuzz");
     }
     else if(number % 3 === 0){
-        console.log("Fizz")
+        console.log("Fizz");
     }
     else if (number % 5 === 0){
-    console.log("Buzz")
+    console.log("Buzz");
     }
-    // document.getElementById("output").innerHTML += ;
 }
