@@ -1,31 +1,28 @@
 
-
-
-
 let message = document.querySelector("ul");
-let colore = document.querySelector("container");
 
 for(let number = 1; number <= 100; number++){
+
+    let messageParagraph = document.createElement("li");
+
+
     if(number % 5 === 0 && number % 3 === 0){
         console.log("FizzBuzz");
-        let messageParagraph = document.createElement("li");
-        messageParagraph.innerHTML = number;
-        message.append("FizzBuzz");
-        colore.classList.add("blue")
+        messageParagraph.innerHTML = "FizzBuzz";
+        message.append(messageParagraph);
+        messageParagraph.classList.add("green");
     }
     else if(number % 3 === 0){
         console.log("Fizz");
-        let messageParagraph = document.createElement("li");
-        messageParagraph.innerHTML = number;
-        message.append("Fizz");
-        colore.classList.add("red")
+        messageParagraph.innerHTML = "Fizz";
+        message.append(messageParagraph);
+        messageParagraph.classList.add("red");
     }
     else if (number % 5 === 0){
-    console.log("Buzz");
-    let messageParagraph = document.createElement("li");
-    messageParagraph.innerHTML = number;
-    message.append("Buzz");
-    colore.classList.add("pink")
+        console.log("Buzz");
+        messageParagraph.innerHTML = "Buzz";
+        message.append(messageParagraph);
+        messageParagraph.classList.add("blue");
     }
     else{
         console.log(number);
